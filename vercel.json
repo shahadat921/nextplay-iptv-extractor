@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "framework": "vite",
+  "cleanUrls": true,
+  "buildCommand": "vite build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://ais-pre-seb6x4476koxug6jfzgq7d-867933472925.asia-east1.run.app/api/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
